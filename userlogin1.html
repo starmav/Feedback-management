@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>after login</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+   function testJS() {
+    var b = document.getElementById('s11').value;
+    var a = document.getElementById('s22').value;
+      localStorage.setItem("usr1", b);
+      localStorage.setItem("usr2", a);
+    }
+</script>
+</head>
+<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+
+<!-- =========================
+     PRE LOADER       
+============================== -->
+<div class="preloader">
+
+	<div class="sk-rotating-plane"></div>
+
+</div>
+<!-- =========================
+     NAVIGATION LINKS     
+============================== -->
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+	<div class="container">
+
+		
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			
+		</div>
+
+		<div class="collapse navbar-collapse">
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#introduction1" class="smoothScroll">Introduction</a></li>
+				<li><a href="#overview" class="smoothScroll">select</a></li>
+				
+				
+				<li><a href="#report" class="smoothScroll">report</a></li>
+				
+			</ul>
+
+		</div>
+
+	</div>
+</div>
+
+<br><br><br>
+<!-- =========================
+    INTRO SECTION   
+============================== -->
+<section id="introduction1" class="parallax-section" >
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<h3 class="wow bounceIn" data-wow-delay="0.9s"></h3>
+                               
+				
+				<a href="#overview"  class="btn btn-lg btn-danger smoothScroll wow fadeInUp" data-wow-delay="2.3s">SELECT </a>
+                                <a href="#report"  class="btn btn-lg btn-danger smoothScroll wow fadeInUp" data-wow-delay="2.3s">report </a>
+			</div>
+
+
+		</div>
+	</div>
+</section>
+<br><br><br>
+<!-- =========================
+    OVERVIEW SECTION   
+============================== -->
+<section id="overview" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
+				<h1 class="wow fadeInUp" data-wow-delay="1.6s">SELECT</h1>
+				<p>select the faculty and the subject</p>
+                                <br>
+                                <h4>select faculty name</h4>
+                                <form name="f1" action="feedback.html" method="get">
+                                <select id="s11">
+                                    <option value="rani">rani</option>
+                                    <option value="mani">mani</option>
+                                    <option value="lilly">lilly</option>
+                                    <option value="siri">siri</option>
+                                    <option value="ria">ria</option>
+                                </select>
+                                    
+                                    <br>
+                                <h4>select subject</h4>
+                                <select id="s22">
+                                    <option value="maths">maths</option>
+                                    <option value="physics">physics</option>
+                                    <option value="chemistry">chemistry</option>
+                                    <option value="biology">biology</option>
+                                    <option value="geography">geography</option>
+                                </select>
+                                <br><br>
+                                <input type="submit" value="Feedback" onclick="testJS()" id="btnQueryString" class="btn btn-lg btn-danger smoothScroll wow fadeInUp" data-wow-delay="2.3s">
+                                </form>
+			</div>
+					
+			<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.9s">
+				<img src="images/feedback3.png" class="img-responsive" alt="Overview">
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<br><br><br>
+
+<br><br><br><br><br>
+<!-- Back top -->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+
+<!-- =========================
+     SCRIPTS   
+============================== -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
